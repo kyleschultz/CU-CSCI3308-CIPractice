@@ -88,5 +88,5 @@ double coord_2d_area_triangle(const coord_2d_t* a,
         return NAN;
     }
     printf("a:(%f,%f), b:(%f,%f), c:(%f,%f)\n",a->x,a->y,b->x,b->y,c->x,c->y);
-    return fabs((a->x * (b->y-c->y) + b->x*(c->y-a->y) + c->x * (a->y-b->y))/2.0);
+    return fabs((a->x * ((b->y)-(c->y)) + b->x*((c->y)-(a->y)) + c->x * ((a->y)-(b->y)))/2.0);
 }
